@@ -54,7 +54,14 @@ jobs:
         echo '        },' >> sarif-superlinter.json
         echo '        "results": [' >> sarif-superlinter.json
 
-        cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
+        count=0
+        cat superlinter-issues.txt | while ((i++)); read line;
+        do
+          count=$i
+        done
+        echo 'Count=' $count
+
+        cat superlinter-issues.txt | while read line || [[ -n $line ]];
         do
           IFS=':'; arrLine=($line); unset IFS;
           echo '          {' >> sarif-superlinter.json
@@ -67,7 +74,7 @@ jobs:
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          echo '                    "uri": "src'${arrLine[1]}'",' >> sarif-superlinter.json
+          echo '                    "uri": "'${arrLine[1]}'",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
           echo '                  "region": {' >> sarif-superlinter.json
@@ -76,7 +83,14 @@ jobs:
           echo '                }' >> sarif-superlinter.json
           echo '              }' >> sarif-superlinter.json
           echo '            ]' >> sarif-superlinter.json
-          echo '          },' >> sarif-superlinter.json
+
+          if [$i!=count]
+          then
+            echo '          },' >> sarif-superlinter.json
+          else
+            echo '          }' >> sarif-superlinter.json
+          fi
+          
         done
         echo '        ],' >> sarif-superlinter.json
         echo '        "columnKind": "utf16CodeUnits"' >> sarif-superlinter.json
@@ -89,4 +103,4 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         # Path to SARIF file relative to the root of the repository
-        sarif_file: sarif/sarif-result-example-2.json
+        sarif_file: sarif-superlinter.json
