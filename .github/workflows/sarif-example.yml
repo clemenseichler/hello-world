@@ -39,9 +39,6 @@ jobs:
         echo '                "defaultConfiguration": {' >> sarif-superlinter.json
         echo '                  "level": "error"' >> sarif-superlinter.json
         echo '                },' >> sarif-superlinter.json
-        echo '                "help": {' >> sarif-superlinter.json
-        echo '                  "text": "Every help can be found in concrete help for a single issue"' >> sarif-superlinter.json
-        echo '                },' >> sarif-superlinter.json
         echo '                "properties": {' >> sarif-superlinter.json
         echo '                  "tags": [' >> sarif-superlinter.json
         echo '                    "linting"' >> sarif-superlinter.json
