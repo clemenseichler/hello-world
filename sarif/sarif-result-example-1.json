@@ -20,6 +20,9 @@
                 "defaultConfiguration": {
                   "level": "note"
                 },
+                "help": {
+                  "text": "This is a help text to solve this issue in code 1"
+                },
                 "properties": {
                   "tags": [
                     "maintainability",
@@ -39,6 +42,10 @@
                 },
                 "defaultConfiguration": {
                   "level": "error"
+                },
+                "help": {
+                  "text": "This is a help text to solve this issue in code 2",
+                  "markdown": "This is a help text to solve this issue in code in markup 2"
                 },
                 "properties": {
                   "tags": [
