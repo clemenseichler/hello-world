@@ -20,9 +20,9 @@ jobs:
         do
           echo 'Line: ' $line
           IFS=':'; arrLine=($line); unset IFS;
-          echo '  Split_length' ${#arrLine[@]}
-          echo '  Split_0' ${arrLine[0]}
-          echo '  Split_1' ${arrLine[1]}
-          echo '  Split_2' ${arrLine[2]}
-          echo '  Split_3' ${arrLine[3]}
+          echo '  Length' ${#arrLine[@]}
+          for i in "${arrLine[@]}"
+          do
+	          echo '    ' $i
+          done
         done
