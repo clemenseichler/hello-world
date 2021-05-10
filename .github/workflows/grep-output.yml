@@ -18,5 +18,10 @@ jobs:
       run: |
         cat superlinter-issues.txt | while read line || [[ -n $line ]];
         do
-          echo 'Line: ' + $line
+          echo 'Line: ' $line
+          arrLine=(${line//:/ })
+          echo '  Split_0' ${arrLine[0]}
+          echo '  Split_1' ${arrLine[1]}
+          echo '  Split_2' ${arrLine[2]}
+          echo '  Split_3' ${arrLine[3]}
         done
