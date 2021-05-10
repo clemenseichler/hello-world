@@ -55,7 +55,6 @@ jobs:
         echo '        "results": [' >> sarif-superlinter.json
 
         count=$(grep "" -c sarif-superlinter.json)
-        count=$count-1
         echo 'Count='$count
 
         cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
@@ -81,7 +80,7 @@ jobs:
           echo '              }' >> sarif-superlinter.json
           echo '            ]' >> sarif-superlinter.json
 
-          if (( $i < $count-1 ))
+          if [ $i lt $count-1 ]
           then
             echo '          },' >> sarif-superlinter.json
           else
