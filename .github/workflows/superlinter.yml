@@ -15,7 +15,6 @@ jobs:
       uses: github/super-linter@v3
       env:
         DEFAULT_BRANCH: develope
-        VALIDATE_YAML: false
         VALIDATE_JAVA: true
         OUTPUT_FORMAT: tap
         OUTPUT_DETAILS: detailed
