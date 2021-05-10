@@ -82,7 +82,7 @@ jobs:
           echo '              }' >> sarif-superlinter.json
           echo '            ]' >> sarif-superlinter.json
 
-          if [ $i < $count-1 ]
+          if ( $i < $count-1 )
           then
             echo '          },' >> sarif-superlinter.json
           else
