@@ -44,11 +44,11 @@ jobs:
         echo '                },' >> sarif-superlinter.json
         echo '                "properties": {' >> sarif-superlinter.json
         echo '                  "tags": [' >> sarif-superlinter.json
-        echo '                    "linting",' >> sarif-superlinter.json
+        echo '                    "linting"' >> sarif-superlinter.json
         echo '                  ],' >> sarif-superlinter.json
         echo '                  "precision": "very-high"' >> sarif-superlinter.json
         echo '                }' >> sarif-superlinter.json
-        echo '              }' >> sarif-superlinter.json
+        echo '              },' >> sarif-superlinter.json
         echo '              {' >> sarif-superlinter.json
         echo '                "id": "R01"' >> sarif-superlinter.json
         echo '              }' >> sarif-superlinter.json
