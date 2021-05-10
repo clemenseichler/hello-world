@@ -22,4 +22,4 @@ jobs:
         DISABLE_ERRORS: true
 
     - name: Check output
-      run: cat $GITHUB_WORKSPACE/superlinter.log
+      run: grep "Error:  " $GITHUB_WORKSPACE/superlinter.log
