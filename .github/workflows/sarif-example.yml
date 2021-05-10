@@ -12,8 +12,84 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
     
+    - name: Identify errors
+      run: grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt > superlinter-issues.txt
+
+    - name: Iterate through errors and create SARIF json file
+      run: |
+        echo '{' > sarif-superlinter.json
+        echo '    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",' >> sarif-superlinter.json
+        echo '    "version": "2.1.0",' >> sarif-superlinter.json
+        echo '    "runs": [' >> sarif-superlinter.json
+        echo '      {' >> sarif-superlinter.json
+        echo '        "tool": {' >> sarif-superlinter.json
+        echo '          "driver": {' >> sarif-superlinter.json
+        echo '            "name": "Super-Linter",' >> sarif-superlinter.json
+        echo '            "semanticVersion": "2.0.0",' >> sarif-superlinter.json
+        echo '            "rules": [' >> sarif-superlinter.json
+        echo '              {' >> sarif-superlinter.json
+        echo '                "id": "0001",' >> sarif-superlinter.json
+        echo '                "name": "Superlinter Rule",' >> sarif-superlinter.json
+        echo '                "shortDescription": {' >> sarif-superlinter.json
+        echo '                  "text": "Superlinter Issue"' >> sarif-superlinter.json
+        echo '                },' >> sarif-superlinter.json
+        echo '                "fullDescription": {' >> sarif-superlinter.json
+        echo '                  "text": "Superlinter Issue (see help for description of concrete problem)"' >> sarif-superlinter.json
+        echo '                },' >> sarif-superlinter.json
+        echo '                "defaultConfiguration": {' >> sarif-superlinter.json
+        echo '                  "level": "error"' >> sarif-superlinter.json
+        echo '                },' >> sarif-superlinter.json
+        echo '                "help": {' >> sarif-superlinter.json
+        echo '                  "text": "Every help can be found in concrete help for a single issue"' >> sarif-superlinter.json
+        echo '                },' >> sarif-superlinter.json
+        echo '                "properties": {' >> sarif-superlinter.json
+        echo '                  "tags": [' >> sarif-superlinter.json
+        echo '                    "linting",' >> sarif-superlinter.json
+        echo '                  ],' >> sarif-superlinter.json
+        echo '                  "precision": "very-high"' >> sarif-superlinter.json
+        echo '                }' >> sarif-superlinter.json
+        echo '              }' >> sarif-superlinter.json
+        echo '              {' >> sarif-superlinter.json
+        echo '                "id": "R01"' >> sarif-superlinter.json
+        echo '              }' >> sarif-superlinter.json
+        echo '            ]' >> sarif-superlinter.json
+        echo '          }' >> sarif-superlinter.json
+        echo '        },' >> sarif-superlinter.json
+        echo '        "results": [' >> sarif-superlinter.json
+
+        cat superlinter-issues.txt | while read line || [[ -n $line ]];
+        do
+          IFS=':'; arrLine=($line); unset IFS;
+          echo '          {' >> sarif-superlinter.json
+          echo '            "ruleId": "0001",' >> sarif-superlinter.json
+          echo '            "ruleIndex": 0,' >> sarif-superlinter.json
+          echo '            "message": {' >> sarif-superlinter.json
+          echo '              "text": "'${arrLine[-1]}'"' >> sarif-superlinter.json
+          echo '            },' >> sarif-superlinter.json
+          echo '            "locations": [' >> sarif-superlinter.json
+          echo '              {' >> sarif-superlinter.json
+          echo '                "physicalLocation": {' >> sarif-superlinter.json
+          echo '                  "artifactLocation": {' >> sarif-superlinter.json
+          echo '                    "uri": "src'${arrLine[1]}'",' >> sarif-superlinter.json
+          echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
+          echo '                  },' >> sarif-superlinter.json
+          echo '                  "region": {' >> sarif-superlinter.json
+          echo '                    "startLine": '${arrLine[2]} >> sarif-superlinter.json
+          echo '                  }' >> sarif-superlinter.json
+          echo '                }' >> sarif-superlinter.json
+          echo '              }' >> sarif-superlinter.json
+          echo '            ]' >> sarif-superlinter.json
+          echo '          },' >> sarif-superlinter.json
+        done
+        echo '        ],' >> sarif-superlinter.json
+        echo '        "columnKind": "utf16CodeUnits"' >> sarif-superlinter.json
+        echo '      }' >> sarif-superlinter.json
+        echo '    ]' >> sarif-superlinter.json
+        echo '  }' >> sarif-superlinter.json
+        echo '' >> sarif-superlinter.json
+                
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
       with:
         # Path to SARIF file relative to the root of the repository
-        sarif_file: sarif/sarif-result-example-1.json
+        sarif_file: sarif-superlinter.json
