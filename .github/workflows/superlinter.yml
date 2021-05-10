@@ -19,6 +19,7 @@ jobs:
         OUTPUT_FORMAT: tap
         OUTPUT_DETAILS: detailed
         LOG_FILE: superlinter.log
+        DISABLE_ERRORS: true
 
     - name: Check output
       run: cat $GITHUB_WORKSPACE/superlinter.log
