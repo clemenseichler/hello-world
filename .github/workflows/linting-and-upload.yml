@@ -22,7 +22,7 @@ jobs:
         DISABLE_ERRORS: true
 
     - name: Identify errors
-      run: grep 'Error.  ' superlinter.txt > superlinter-issues.txt
+      run: grep 'Error.  ' $GITHUB_WORKSPACE/superlinter.txt > superlinter-issues.txt
 
     - name: Iterate through errors and create SARIF json file
       run: |
