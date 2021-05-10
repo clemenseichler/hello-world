@@ -54,13 +54,7 @@ jobs:
         echo '        },' >> sarif-superlinter.json
         echo '        "results": [' >> sarif-superlinter.json
 
-        count=0
-        cat superlinter-issues.txt | while ((i++)); read line;
-        do
-          count=$i
-          echo $i ' - ' $count
-        done
-        echo 'Count=' $count
+        grep "" -c sarif-superlinter.json
 
         cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
         do
