@@ -85,6 +85,26 @@
             ]
           },
           {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": "This concrete thing is wrong 1"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
             "ruleId": "0002",
             "ruleIndex": 1,
             "message": {
