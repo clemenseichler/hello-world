@@ -20,6 +20,3 @@ jobs:
         OUTPUT_DETAILS: detailed
         LOG_FILE: superlinter.log
         DISABLE_ERRORS: true
-
-    - name: Check output
-      run: grep "Error:  " $GITHUB_WORKSPACE/superlinter.log
