@@ -16,7 +16,6 @@ jobs:
 
     - name: Iterate through errors and create SARIF json file
       run: |
-        set RULE=0001
         echo '##############################################################'
         echo '{' > sarif-superlinter.json
         echo '    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",' >> sarif-superlinter.json
@@ -29,7 +28,7 @@ jobs:
         echo '            "semanticVersion": "2.0.0",' >> sarif-superlinter.json
         echo '            "rules": [' >> sarif-superlinter.json
         echo '              {' >> sarif-superlinter.json
-        echo '                "id": "$RULE",' >> sarif-superlinter.json
+        echo '                "id": "0001",' >> sarif-superlinter.json
         echo '                "name": "Superlinter Rule",' >> sarif-superlinter.json
         echo '                "shortDescription": {' >> sarif-superlinter.json
         echo '                  "text": "Superlinter Issue"' >> sarif-superlinter.json
@@ -62,20 +61,20 @@ jobs:
         do
           IFS=':'; arrLine=($line); unset IFS;
           echo '          {' >> sarif-superlinter.json
-          echo '            "ruleId": "$RULE",' >> sarif-superlinter.json
+          echo '            "ruleId": "0001",' >> sarif-superlinter.json
           echo '            "ruleIndex": 0,' >> sarif-superlinter.json
           echo '            "message": {' >> sarif-superlinter.json
-          echo '              "text": "${#arrLine[${arrLine[@]}-1]}"' >> sarif-superlinter.json
+          echo '              "text": "${arrLine[${arrLine[@]}-1]]}"' >> sarif-superlinter.json
           echo '            },' >> sarif-superlinter.json
           echo '            "locations": [' >> sarif-superlinter.json
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          echo '                    "uri": "src${#arrLine[1]}",' >> sarif-superlinter.json
+          echo '                    "uri": "src${arrLine[1]}",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
           echo '                  "region": {' >> sarif-superlinter.json
-          echo '                    "startLine": ${#arrLine[2]}' >> sarif-superlinter.json
+          echo '                    "startLine": $#arrLine[2]}' >> sarif-superlinter.json
           echo '                  }' >> sarif-superlinter.json
           echo '                }' >> sarif-superlinter.json
           echo '              }' >> sarif-superlinter.json
