@@ -1,0 +1,67 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "My Static Analysis Tool",
+            "semanticVersion": "2.0.0",
+            "rules": [
+              {
+                "id": "0001",
+                "name": "My SAST Rule 1",
+                "shortDescription": {
+                  "text": "Something is wrong 1"
+                },
+                "fullDescription": {
+                  "text": "Something is wrong. Consider to change this to XYZ 1"
+                },
+                "defaultConfiguration": {
+                  "level": "note"
+                },
+                "properties": {
+                  "tags": [
+                    "maintainability"
+                  ],
+                  "precision": "very-high"
+                }
+              },
+              {
+                "id": "R01"
+              }
+            ]
+          }
+        },
+        "results": [
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": "This concrete thing is wrong 1"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 4,
+                    "startColumn": 5,
+                    "endColumn": 39
+                  }
+                }
+              }
+            ],
+            "partialFingerprints": {
+              "primaryLocationLineHash": "39fa2ee980eb94b0:1",
+              "primaryLocationStartColumnFingerprint": "4"
+            }
+          }
+        ],
+        "columnKind": "utf16CodeUnits"
+      }
+    ]
+  }
