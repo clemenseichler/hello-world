@@ -23,6 +23,27 @@
                 "properties": {
                   "tags": [
                     "maintainability"
+                    "my-own-test"
+                  ],
+                  "precision": "very-high"
+                }
+              },
+              {
+                "id": "0002",
+                "name": "My SAST Rule 2",
+                "shortDescription": {
+                  "text": "Something is wrong 2"
+                },
+                "fullDescription": {
+                  "text": "Something is wrong. Consider to change this to XYZ 2"
+                },
+                "defaultConfiguration": {
+                  "level": "blocker"
+                },
+                "properties": {
+                  "tags": [
+                    "security"
+                    "safety"
                   ],
                   "precision": "very-high"
                 }
@@ -59,6 +80,62 @@
               "primaryLocationLineHash": "39fa2ee980eb94b0:1",
               "primaryLocationStartColumnFingerprint": "4"
             }
+          },
+          {
+            "ruleId": "0002",
+            "ruleIndex": 1,
+            "message": {
+              "text": "This concrete thing is wrong 2"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 5
+                  }
+                }
+              }
+            ],
+            "partialFingerprints": {
+              "primaryLocationLineHash": "5061c3315a741b7d:1",
+              "primaryLocationStartColumnFingerprint": "7"
+            },
+            "relatedLocations": [
+              {
+                "id": 1,
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 15
+                  }
+                },
+                "message": {
+                  "text": "Zugeordnete Zeile 1"
+                }
+              },
+              {
+                "id": 2,
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                },
+                "message": {
+                  "text": "Zugeordnete Zeile 2"
+                }
+              }
+            ]
           }
         ],
         "columnKind": "utf16CodeUnits"
