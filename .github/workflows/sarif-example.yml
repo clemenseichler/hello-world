@@ -13,9 +13,7 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Identify errors
-      run: |
-        grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt > superlinter-issues.txt
-        cat superlinter-issues.txt
+      run: grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt > superlinter-issues.txt
 
     - name: Iterate through errors and create SARIF json file
       run: |
@@ -57,7 +55,6 @@ jobs:
         echo '        "results": [' >> sarif-superlinter.json
 
         count=$(grep "" -c superlinter-issues.txt)
-        echo 'Count='$count
 
         cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
         do
@@ -97,10 +94,6 @@ jobs:
         echo '    ]' >> sarif-superlinter.json
         echo '  }' >> sarif-superlinter.json
         echo '' >> sarif-superlinter.json
-
-        echo '#####################################################'
-        cat sarif-superlinter.json
-        echo '#####################################################'
                 
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
