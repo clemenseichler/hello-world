@@ -94,45 +94,52 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src/de/clemens/calculator/Main.java",
+                    "uri": "src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
-                    "startLine": 5
+                    "startLine": 20
                   }
                 }
               }
             ],
-            "relatedLocations": [
+            "codeFlows": [
               {
-                "id": 1,
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "src/de/clemens/calculator/Calculator.java",
-                    "uriBaseId": "%SRCROOT%"
-                  },
-                  "region": {
-                    "startLine": 15
+                "threadFlows": [
+                  {
+                    "locations": [
+                      {
+                        "location": {
+                          "physicalLocation": {
+                            "region": {
+                              "startLine": 10
+                            },
+                            "artifactLocation": {
+                              "uriBaseId": "%SRCROOT%",
+                              "uri": "src/de/clemens/calculator/Calculator.java"
+                            }
+                          },
+                          "message": {
+                            "text": "Rule has index 2"
+                          }
+                        }
+                      },
+                      {
+                        "location": {
+                          "physicalLocation": {
+                            "region": {
+                              "startLine": 5
+                            },
+                            "artifactLocation": {
+                              "uriBaseId": "%SRCROOT%",
+                              "uri": "src/de/clemens/calculator/Main.java"
+                            }
+                          }
+                        }
+                      }
+                    ]
                   }
-                },
-                "message": {
-                  "text": "Zugeordnete Zeile 1"
-                }
-              },
-              {
-                "id": 2,
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "src/de/clemens/calculator/Calculator.java",
-                    "uriBaseId": "%SRCROOT%"
-                  },
-                  "region": {
-                    "startLine": 19
-                  }
-                },
-                "message": {
-                  "text": "Zugeordnete Zeile 2"
-                }
+                ]
               }
             ]
           }
