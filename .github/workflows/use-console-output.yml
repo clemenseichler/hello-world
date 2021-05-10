@@ -14,7 +14,7 @@ jobs:
         run: echo "::set-output name=author::$(git show -s --format=%an)"
 
       - name: Print author name
-        run: echo "${{ steps.author.outputs.author }}"
+        run: echo "${{ steps.author }}"
 
 #      - name: Print author name with an environment variable
 #        run: echo $AUTHOR_NAME
