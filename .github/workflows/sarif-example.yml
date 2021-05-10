@@ -72,7 +72,7 @@ jobs:
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          location=$(echo '/github/workspace/src/de/clemens/calculator/Main.java' | cut -c18-)
+          location=$(echo '/github/workspace/src/de/clemens/calculator/Main.java' | cut -c19-)
           echo '                    "uri": "'$location'",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
