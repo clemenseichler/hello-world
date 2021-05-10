@@ -22,7 +22,7 @@
                 },
                 "properties": {
                   "tags": [
-                    "maintainability"
+                    "maintainability",
                     "my-own-test"
                   ],
                   "precision": "very-high"
@@ -38,11 +38,11 @@
                   "text": "Something is wrong. Consider to change this to XYZ 2"
                 },
                 "defaultConfiguration": {
-                  "level": "blocker"
+                  "level": "error"
                 },
                 "properties": {
                   "tags": [
-                    "security"
+                    "security",
                     "safety"
                   ],
                   "precision": "very-high"
