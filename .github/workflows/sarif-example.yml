@@ -54,7 +54,7 @@ jobs:
         echo '        },' >> sarif-superlinter.json
         echo '        "results": [' >> sarif-superlinter.json
 
-        grep "" -c sarif-superlinter.json
+        count=grep "" -c sarif-superlinter.json
 
         cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
         do
@@ -79,7 +79,7 @@ jobs:
           echo '              }' >> sarif-superlinter.json
           echo '            ]' >> sarif-superlinter.json
 
-          if (( $i < $count ))
+          if (( $i < $count-1 ))
           then
             echo '          },' >> sarif-superlinter.json
           else
