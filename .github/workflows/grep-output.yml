@@ -23,6 +23,6 @@ jobs:
           echo '  Length' ${#arrLine[@]}
           for i in "${arrLine[@]}"
           do
-	          echo '    ' $i
+            echo '    ' $i
           done
         done
