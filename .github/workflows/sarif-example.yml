@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  lint-and-upload-sarif-results:
     runs-on: ubuntu-latest
 
     steps:
@@ -57,7 +57,7 @@ jobs:
         echo '        },' >> sarif-superlinter.json
         echo '        "results": [' >> sarif-superlinter.json
 
-        cat superlinter-issues.txt | while read line || [[ -n $line ]];
+        cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
         do
           IFS=':'; arrLine=($line); unset IFS;
           echo '          {' >> sarif-superlinter.json
@@ -92,4 +92,4 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         # Path to SARIF file relative to the root of the repository
-        sarif_file: sarif-superlinter.json
+        sarif_file: sarif/sarif-result-example-2.json

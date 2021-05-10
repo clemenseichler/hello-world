@@ -1,0 +1,564 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "Super-Linter",
+            "semanticVersion": "2.0.0",
+            "rules": [
+              {
+                "id": "0001",
+                "name": "Superlinter Rule",
+                "shortDescription": {
+                  "text": "Superlinter Issue"
+                },
+                "fullDescription": {
+                  "text": "Superlinter Issue (see help for description of concrete problem)"
+                },
+                "defaultConfiguration": {
+                  "level": "error"
+                },
+                "help": {
+                  "text": "Every help can be found in concrete help for a single issue"
+                },
+                "properties": {
+                  "tags": [
+                    "linting",
+                  ],
+                  "precision": "very-high"
+                }
+              }
+              {
+                "id": "R01"
+              }
+            ]
+          }
+        },
+        "results": [
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing package-info.java file. [JavadocPackage]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [JavadocVariable]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 4
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Class 'Calculator' looks like designed for extension (can be subclassed), but the method 'calculate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Calculator' final or making the method 'calculate' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 6
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 6
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Line is longer than 80 characters (found 117). [LineLength]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 11
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 15
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op1 should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op2 should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing package-info.java file. [JavadocPackage]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [JavadocVariable]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 4
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Class 'Calculator' looks like designed for extension (can be subclassed), but the method 'calculate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Calculator' final or making the method 'calculate' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 6
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 6
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Line is longer than 80 characters (found 117). [LineLength]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 11
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 15
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op1 should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter op2 should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 19
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing package-info.java file. [JavadocPackage]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 3
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter args should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 3
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing package-info.java file. [JavadocPackage]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 3
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ruleId": "0001",
+            "ruleIndex": 0,
+            "message": {
+              "text": " Parameter args should be final. [FinalParameters]"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uriBaseId": "%SRCROOT%"
+                  },
+                  "region": {
+                    "startLine": 3
+                  }
+                }
+              }
+            ]
+          },
+        ],
+        "columnKind": "utf16CodeUnits"
+      }
+    ]
+  }
