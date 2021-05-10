@@ -18,7 +18,7 @@ jobs:
         VALIDATE_JAVA: true
         OUTPUT_FORMAT: tap
         OUTPUT_DETAILS: detailed
-        LOG_FILE: ${{ GITHUB_WORKSPACE }}/superlinter.log
+        LOG_FILE: $GITHUB_WORKSPACE/superlinter.log
 
     - name: Check output
       run: cat $GITHUB_WORKSPACE/superlinter.log
