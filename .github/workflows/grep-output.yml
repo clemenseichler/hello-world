@@ -11,5 +11,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Check output
-      run: grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt
+    - name: Identify errors
+      run: grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt > superlinter-issues.txt
+
+    - name: Iterate through errors
+      run: |
+        cat superlinter-issues.txt | while read line || [[ -n $line ]];
+        do
+          echo 'Line: ' + $line
+        done
