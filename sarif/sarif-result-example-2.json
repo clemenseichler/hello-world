@@ -20,9 +20,6 @@
                 "defaultConfiguration": {
                   "level": "error"
                 },
-                "help": {
-                  "text": "Every help can be found in concrete help for a single issue"
-                },
                 "properties": {
                   "tags": [
                     "linting"
@@ -47,7 +44,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -67,7 +64,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -87,7 +84,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -107,7 +104,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -127,7 +124,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -147,7 +144,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -167,7 +164,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -187,7 +184,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -207,7 +204,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -227,7 +224,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -247,7 +244,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -267,7 +264,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -287,7 +284,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -307,7 +304,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -327,7 +324,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -347,7 +344,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -367,7 +364,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -387,7 +384,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Calculator.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Calculator.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -407,7 +404,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -427,7 +424,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -447,7 +444,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -467,7 +464,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -487,7 +484,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -507,7 +504,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -527,7 +524,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
@@ -547,7 +544,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "src /github/workspace/src/de/clemens/calculator/Main.java",
+                    "uri": "src/github/workspace/src/de/clemens/calculator/Main.java",
                     "uriBaseId": "%SRCROOT%"
                   },
                   "region": {
