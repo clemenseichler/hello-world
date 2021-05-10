@@ -75,11 +75,7 @@
                   }
                 }
               }
-            ],
-            "partialFingerprints": {
-              "primaryLocationLineHash": "39fa2ee980eb94b0:1",
-              "primaryLocationStartColumnFingerprint": "4"
-            }
+            ]
           },
           {
             "ruleId": "0002",
@@ -100,10 +96,6 @@
                 }
               }
             ],
-            "partialFingerprints": {
-              "primaryLocationLineHash": "5061c3315a741b7d:1",
-              "primaryLocationStartColumnFingerprint": "7"
-            },
             "relatedLocations": [
               {
                 "id": 1,
