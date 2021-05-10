@@ -89,3 +89,10 @@ jobs:
         echo '' >> sarif-superlinter.json
         echo '##############################################################'
         cat sarif-superlinter.json
+
+        cat superlinter-issues.txt | while read line || [[ -n $line ]];
+        do
+          echo '${arrLine[${arrLine[@]}-1]}'
+          echo '${arrLine[1]}'
+          echo '${arrLine[2]}'
+        done
