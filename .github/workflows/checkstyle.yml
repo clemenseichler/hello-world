@@ -14,4 +14,3 @@ jobs:
       uses: nikitasavinov/checkstyle-action@master
       with:
         checkstyle_config: google_checks.xml
-        reporter: 'github-pr-check'
