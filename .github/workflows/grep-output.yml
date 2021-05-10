@@ -25,15 +25,4 @@ jobs:
         echo '        "tool": {' >> sarif-superlinter.json
         echo '          "driver": {' >> sarif-superlinter.json
         echo '##############################################################'
-#        cat superlinter-issues.txt | while read line || [[ -n $line ]];
-#        do
-#          echo 'Line: ' $line
-#          IFS=':'; arrLine=($line); unset IFS;
-#          echo '  Length' ${#arrLine[@]}
-#          for i in "${arrLine[@]}"
-#          do
-#            echo '    ' $i
-#          done
-#        done
-        echo '##############################################################'
         cat sarif-superlinter.json
