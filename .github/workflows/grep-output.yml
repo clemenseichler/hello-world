@@ -14,8 +14,17 @@ jobs:
     - name: Identify errors
       run: grep 'Error.  ' $GITHUB_WORKSPACE/sarif/superlinter-output.txt > superlinter-issues.txt
 
-    - name: Iterate through errors
+    - name: Iterate through errors and create SARIF json file
       run: |
+        echo '##############################################################'
+        echo '{' > sarif-superlinter.json
+        echo '    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",' > sarif-superlinter.json
+        echo '    "version": "2.1.0",' > sarif-superlinter.json
+        echo '    "runs": [' > sarif-superlinter.json
+        echo '      {' > sarif-superlinter.json
+        echo '        "tool": {' > sarif-superlinter.json
+        echo '          "driver": {' > sarif-superlinter.json
+        echo '##############################################################'
         cat superlinter-issues.txt | while read line || [[ -n $line ]];
         do
           echo 'Line: ' $line
@@ -26,3 +35,5 @@ jobs:
             echo '    ' $i
           done
         done
+        echo '##############################################################'
+        cat sarif-superlinter.json
