@@ -58,10 +58,11 @@ jobs:
         cat superlinter-issues.txt | while ((i++)); read line;
         do
           count=$i
+          echo $i ' - ' $count
         done
         echo 'Count=' $count
 
-        cat superlinter-issues.txt | while read line || [[ -n $line ]];
+        cat superlinter-issues.txt | while ((i++)); read line || [[ -n $line ]];
         do
           IFS=':'; arrLine=($line); unset IFS;
           echo '          {' >> sarif-superlinter.json
@@ -84,7 +85,7 @@ jobs:
           echo '              }' >> sarif-superlinter.json
           echo '            ]' >> sarif-superlinter.json
 
-          if [$i!=count]
+          if (( $i < $count ))
           then
             echo '          },' >> sarif-superlinter.json
           else
