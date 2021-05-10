@@ -64,17 +64,17 @@ jobs:
           echo '            "ruleId": "0001",' >> sarif-superlinter.json
           echo '            "ruleIndex": 0,' >> sarif-superlinter.json
           echo '            "message": {' >> sarif-superlinter.json
-          echo '              "text": "'${arrLine[${arrLine[@]}-1]}'"' >> sarif-superlinter.json
+          echo '              "text": "' ${arrLine[-1]} '"' >> sarif-superlinter.json
           echo '            },' >> sarif-superlinter.json
           echo '            "locations": [' >> sarif-superlinter.json
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          echo '                    "uri": "src'${arrLine[1]}'",' >> sarif-superlinter.json
+          echo '                    "uri": "src' ${arrLine[1]} '",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
           echo '                  "region": {' >> sarif-superlinter.json
-          echo '                    "startLine": '${arrLine[2]} >> sarif-superlinter.json
+          echo '                    "startLine": ' ${arrLine[2]} >> sarif-superlinter.json
           echo '                  }' >> sarif-superlinter.json
           echo '                }' >> sarif-superlinter.json
           echo '              }' >> sarif-superlinter.json
