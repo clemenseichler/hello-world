@@ -92,6 +92,7 @@ jobs:
 
         cat superlinter-issues.txt | while read line || [[ -n $line ]];
         do
+          IFS=':'; arrLine=($line); unset IFS;
           echo '${arrLine[${arrLine[@]}-1]}'
           echo '${arrLine[1]}'
           echo '${arrLine[2]}'
