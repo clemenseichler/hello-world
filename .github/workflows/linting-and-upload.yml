@@ -24,7 +24,7 @@ jobs:
         grep -E '.*/github/workspace.+\. \[.+\]' superlinter.txt
 
     - name: Identify errors
-      run: grep -E '.*/github/workspace.+\. \[.+\]' superlinter.txt
+      run: grep -E '.*/github/workspace.+\. \[.+\]' superlinter.txt > superlinter-issues.txt
 
     - name: Iterate through errors and create SARIF json file
       run: |
