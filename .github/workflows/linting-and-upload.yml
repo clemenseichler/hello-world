@@ -14,12 +14,14 @@ jobs:
     - name: Lint
       uses: github/super-linter@v3
       env:
-        DEFAULT_BRANCH: develope
         VALIDATE_JAVA: true
         OUTPUT_FORMAT: tap
         OUTPUT_DETAILS: detailed
         LOG_FILE: superlinter.txt
         DISABLE_ERRORS: true
+
+    - name: Check lint output
+      run: cat $GITHUB_WORKSPACE/superlinter.txt
 
     - name: Identify errors
       run: grep 'Error.  ' $GITHUB_WORKSPACE/superlinter.txt > superlinter-issues.txt
