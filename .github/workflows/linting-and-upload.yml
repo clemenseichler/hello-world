@@ -15,13 +15,11 @@ jobs:
       uses: github/super-linter@v3
       env:
         VALIDATE_JAVA: true
-#        OUTPUT_FORMAT: tap
-#        OUTPUT_DETAILS: detailed
         LOG_FILE: superlinter.txt
         DISABLE_ERRORS: true
 
     - name: Check lint output
-      run: grep '^E.' superlinter.txt
+      run: grep '.*Error.' superlinter.txt
 
     - name: Identify errors
       run: grep 'Error.  ' superlinter.txt > superlinter-issues.txt
