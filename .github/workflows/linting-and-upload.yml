@@ -19,7 +19,7 @@ jobs:
         DISABLE_ERRORS: true
 
     - name: Check lint output
-      run: grep '.*rror.*  /github/workspace.' superlinter.txt
+      run: grep '.*  /github/workspace.' superlinter.txt
 
     - name: Identify errors
       run: grep 'Error.  ' superlinter.txt > superlinter-issues.txt
