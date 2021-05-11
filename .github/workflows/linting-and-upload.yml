@@ -21,7 +21,10 @@ jobs:
         DISABLE_ERRORS: true
 
     - name: Check lint output
-      run: cat superlinter.txt
+      run: |
+        cat superlinter.txt
+        echo '#####################################################################'
+        grep 'Error.  ' superlinter.txt
 
     - name: Identify errors
       run: grep 'Error.  ' superlinter.txt > superlinter-issues.txt
