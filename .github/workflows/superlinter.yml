@@ -22,3 +22,4 @@ jobs:
         DISABLE_ERRORS: true
     
     - name: Check lint output
+      run: cat $GITHUB_WORKSPACE/superlinter.log
