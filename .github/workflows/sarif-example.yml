@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint-and-upload-sarif-results:
+  create-and-upload-sarif-results:
     runs-on: ubuntu-latest
 
     steps:
@@ -69,7 +69,7 @@ jobs:
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          location=$(echo '${arrLine[1]}' | cut -c19-)
+          location=$(echo ${arrLine[1]} | cut -c19-)
           echo '                    "uri": "'$location'",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json

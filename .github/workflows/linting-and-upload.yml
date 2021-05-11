@@ -80,7 +80,7 @@ jobs:
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          location=$(echo '${arrLine[0]}' | cut -c19-)
+          location=$(echo ${arrLine[0]} | cut -c19-)
           echo '                    "uri": "'$location'",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
