@@ -18,5 +18,7 @@ jobs:
         VALIDATE_JAVA: true
         OUTPUT_FORMAT: tap
         OUTPUT_DETAILS: detailed
-        LOG_FILE: superlinter.log
+        LOG_FILE: $GITHUB_WORKSPACE/superlinter.log
         DISABLE_ERRORS: true
+    
+    - name: Check lint output
