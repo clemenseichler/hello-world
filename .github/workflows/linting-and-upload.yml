@@ -21,7 +21,7 @@ jobs:
         DISABLE_ERRORS: true
 
     - name: Check lint output
-      run: grep '.' superlinter.txt
+      run: grep '^E.' superlinter.txt
 
     - name: Identify errors
       run: grep 'Error.  ' superlinter.txt > superlinter-issues.txt
