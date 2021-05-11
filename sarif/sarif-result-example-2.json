@@ -44,11 +44,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine":  Missing package-info.java file. [JavadocPackage]
+                  "startLine": 1
                 }
               }
             }
@@ -64,11 +64,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 5
+                  "startLine": 4
                 }
               }
             }
@@ -84,11 +84,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 5
+                  "startLine": 6
                 }
               }
             }
@@ -104,11 +104,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 5
+                  "startLine": 6
                 }
               }
             }
@@ -124,11 +124,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine":  Line is longer than 80 characters (found 117). [LineLength]
+                  "startLine": 11
                 }
               }
             }
@@ -144,11 +144,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 37
+                  "startLine": 15
                 }
               }
             }
@@ -164,11 +164,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 33
+                  "startLine": 19
                 }
               }
             }
@@ -184,11 +184,11 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 41
+                  "startLine": 19
                 }
               }
             }
@@ -204,11 +204,191 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
+                  "uri": "src/de/clemens/calculator/Calculator.java",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 50
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Missing package-info.java file. [JavadocPackage]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Missing a Javadoc comment. [JavadocVariable]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Class 'Calculator' looks like designed for extension (can be subclassed), but the method 'calculate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Calculator' final or making the method 'calculate' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Line is longer than 80 characters (found 117). [LineLength]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Parameter op should be final. [FinalParameters]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Parameter op should be final. [FinalParameters]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Parameter op1 should be final. [FinalParameters]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 19
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "0001",
+          "ruleIndex": 0,
+          "message": {
+            "text": " Parameter op2 should be final. [FinalParameters]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/de/clemens/calculator/Calculator.java",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 19
                 }
               }
             }
@@ -228,187 +408,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine":  Missing package-info.java file. [JavadocPackage]
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Missing a Javadoc comment. [JavadocVariable]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 5
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Class 'Calculator' looks like designed for extension (can be subclassed), but the method 'calculate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Calculator' final or making the method 'calculate' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 5
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Missing a Javadoc comment. [MissingJavadocMethod]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 5
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Line is longer than 80 characters (found 117). [LineLength]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine":  Line is longer than 80 characters (found 117). [LineLength]
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Parameter op should be final. [FinalParameters]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 37
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Parameter op should be final. [FinalParameters]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 33
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Parameter op1 should be final. [FinalParameters]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 41
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Parameter op2 should be final. [FinalParameters]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 50
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "0001",
-          "ruleIndex": 0,
-          "message": {
-            "text": " Missing package-info.java file. [JavadocPackage]"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/de/clemens/calculator/Main.java",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine":  Missing package-info.java file. [JavadocPackage]
+                  "startLine": 1
                 }
               }
             }
@@ -448,7 +448,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 5
+                  "startLine": 3
                 }
               }
             }
@@ -468,7 +468,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 29
+                  "startLine": 3
                 }
               }
             }
@@ -488,7 +488,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine":  Missing package-info.java file. [JavadocPackage]
+                  "startLine": 1
                 }
               }
             }
@@ -528,7 +528,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 5
+                  "startLine": 3
                 }
               }
             }
@@ -548,7 +548,7 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 29
+                  "startLine": 3
                 }
               }
             }
@@ -559,3 +559,4 @@
     }
   ]
 }
+
