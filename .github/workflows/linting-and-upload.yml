@@ -80,12 +80,12 @@ jobs:
           echo '              {' >> sarif-superlinter.json
           echo '                "physicalLocation": {' >> sarif-superlinter.json
           echo '                  "artifactLocation": {' >> sarif-superlinter.json
-          location=$(echo '/github/workspace/src/de/clemens/calculator/Main.java' | cut -c19-)
+          location=$(echo '${arrLine[0]}' | cut -c19-)
           echo '                    "uri": "'$location'",' >> sarif-superlinter.json
           echo '                    "uriBaseId": "%SRCROOT%"' >> sarif-superlinter.json
           echo '                  },' >> sarif-superlinter.json
           echo '                  "region": {' >> sarif-superlinter.json
-          echo '                    "startLine": '${arrLine[2]} >> sarif-superlinter.json
+          echo '                    "startLine": '${arrLine[1]} >> sarif-superlinter.json
           echo '                  }' >> sarif-superlinter.json
           echo '                }' >> sarif-superlinter.json
           echo '              }' >> sarif-superlinter.json

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint-and-upload-sarif-results:
+  upload-sarif-results:
     runs-on: ubuntu-latest
 
     steps:
