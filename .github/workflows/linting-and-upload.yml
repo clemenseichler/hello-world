@@ -1,5 +1,8 @@
 name: Linting-and-Upload
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
   workflow_dispatch:
 
@@ -116,6 +119,9 @@ jobs:
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: sarif-superlinter.json
+
+    - name: Authenticate GH cli
+      run: gh auth login --with-token $GITHUB_TOKEN
 
     - name: Create GH issue
       run: |
