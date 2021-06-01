@@ -120,8 +120,15 @@ jobs:
         # Path to SARIF file relative to the root of the repository
         sarif_file: sarif-superlinter.json
 
-    - name: Authenticate GH cli
-      run: gh auth login --with-token $GITHUB_TOKEN
+    - name: Install gh cli
+      run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+          sudo apt-add-repository https://cli.github.com/packages
+          sudo apt update
+          sudo apt install gh
+
+    #- name: Authenticate GH cli
+    #  run: gh auth login --with-token $GITHUB_TOKEN
 
     - name: Create GH issue
       run: |
