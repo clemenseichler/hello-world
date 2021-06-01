@@ -116,3 +116,9 @@ jobs:
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: sarif-superlinter.json
+
+    - name: Create GH issue
+      run: |
+          gh issue create \
+            --title "Superlinter found new linting issues" \
+            --body-file superlinter-issues.txt
